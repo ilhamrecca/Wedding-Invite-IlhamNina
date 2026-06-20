@@ -1,0 +1,38 @@
+# Netlify deployment configuration
+# Deploy: drag the "WedInvite copy 2" folder onto https://app.netlify.com/drop
+# Custom domains: Site settings → Domain management → Add custom domain (free)
+
+[build]
+  publish = "."
+
+# ── Long-cache for all static assets (photos, video, audio, SVGs, fonts) ──
+[[headers]]
+  for = "/public/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/src/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# ── HTML: always fresh ──
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "no-cache, must-revalidate"
+
+# ── Security headers ──
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options          = "DENY"
+    X-Content-Type-Options   = "nosniff"
+    Referrer-Policy          = "strict-origin-when-cross-origin"
+    Permissions-Policy       = "camera=(), microphone=(), geolocation=()"
+
+# ── SPA-style fallback: all unknown paths serve index.html ──
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200

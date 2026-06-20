@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" fill="none">
+  <style>
+    path, circle {
+      stroke-dasharray: 920;
+      stroke-dashoffset: 920;
+      animation: floral-draw 2.4s cubic-bezier(.22,1,.36,1) forwards, floral-bloom .9s ease forwards .45s;
+    }
+    circle {
+      stroke-dasharray: 36;
+      stroke-dashoffset: 36;
+    }
+    @keyframes floral-draw {
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes floral-bloom {
+      from { opacity: .18; }
+      to { opacity: 1; }
+    }
+  </style>
+  <g stroke="#a98231" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M28 188C58 151 92 118 142 91" stroke-width="2.4"/>
+    <path d="M42 178C50 139 69 99 105 62" stroke-width="1.3" opacity=".7"/>
+    <path d="M32 188H188" stroke-width="1.4" opacity=".45"/>
+    <path d="M28 188V32" stroke-width="1.4" opacity=".45"/>
+    <path d="M82 128C70 111 74 92 91 79C105 99 101 117 82 128Z" fill="#f4dfad" fill-opacity=".58" stroke-width="1.2"/>
+    <path d="M116 103C103 88 105 68 122 52C139 72 135 91 116 103Z" fill="#fff6da" fill-opacity=".75" stroke-width="1.2"/>
+    <path d="M144 89C132 75 136 57 153 43C168 63 162 80 144 89Z" fill="#f7e6bb" fill-opacity=".64" stroke-width="1.2"/>
+    <path d="M71 140C50 139 36 127 35 109C60 107 74 119 71 140Z" fill="#fff5d8" fill-opacity=".72" stroke-width="1.2"/>
+    <path d="M104 114C83 111 71 97 73 79C98 80 111 94 104 114Z" fill="#f3db9d" fill-opacity=".45" stroke-width="1.2"/>
+    <path d="M136 96C155 93 171 99 180 115C159 124 143 117 136 96Z" fill="#fff7e0" fill-opacity=".68" stroke-width="1.2"/>
+    <path d="M118 58C124 34 140 21 160 20C160 45 145 60 118 58Z" fill="#fff7e4" fill-opacity=".62" stroke-width="1.2"/>
+    <circle cx="151" cy="76" r="4.5" fill="#d6ac3d" fill-opacity=".72" stroke-width=".8"/>
+    <circle cx="165" cy="103" r="3.5" fill="#d6ac3d" fill-opacity=".62" stroke-width=".8"/>
+    <circle cx="58" cy="151" r="3.5" fill="#d6ac3d" fill-opacity=".62" stroke-width=".8"/>
+    <path d="M43 178C61 179 78 174 94 164" stroke-width="1" opacity=".55"/>
+    <path d="M63 154C83 157 101 153 118 143" stroke-width="1" opacity=".5"/>
+    <path d="M92 126C110 129 127 125 142 116" stroke-width="1" opacity=".45"/>
+  </g>
+</svg>

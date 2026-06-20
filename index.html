@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#d6ac3d" />
+    <title>Ilham &amp; Nina Wedding Invitation — 5 Juli 2026</title>
+    <meta name="description" content="Undangan pernikahan Muhammad Ilham Maulana dan Nanda Karina Satriani. Minggu, 5 Juli 2026 di Grand Imperial Ballroom, Mataram, NTB." />
+    <!-- Open Graph (WhatsApp, social preview) -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="Ilham &amp; Nina — Wedding Invitation" />
+    <meta property="og:description" content="Kami mengundang Anda untuk hadir dalam hari bahagia kami. 5 Juli 2026, Grand Imperial Ballroom, Mataram." />
+    <meta property="og:image"       content="./public/assets/brand/moodboard.png" />
+    <!-- DNS prefetch for third-party domains -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://firestore.googleapis.com" />
+    <link rel="dns-prefetch" href="https://www.gstatic.com" />
+    <!-- Font connections -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preload the hero SVG so the loader renders without a waterfall -->
+    <link rel="preload" href="./public/assets/brand/IlhamNina.svg" as="fetch" crossorigin />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Naskh+Arabic:wght@500;600&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css?v=20260620-17" />
+  </head>
+  <body class="is-loading">
+    <div id="loader" class="loader" aria-live="polite">
+      <div id="loader-mark" class="loader__mark"></div>
+      <div class="loader__progress" aria-hidden="true"><span id="loader-bar"></span></div>
+      <p id="loader-text">Menyiapkan hari bahagia 0%</p>
+    </div>
+
+    <audio id="bgm" src="./public/assets/Bgm.mp3" loop preload="auto"></audio>
+    <button id="music-toggle" class="music-toggle icon-button icon-button--music" type="button" aria-label="Matikan musik latar"></button>
+
+    <main id="page">
+      <section id="opening" class="opening" aria-label="Pembuka undangan">
+        <div class="hero-stage">
+          <div class="hero-blackout" aria-hidden="true"></div>
+          <div id="opening-hero" class="opening__hero">
+            <div id="hero-burst" class="hero-burst" aria-hidden="true"></div>
+            <div class="hero-frame" aria-hidden="true">
+              <span class="hero-frame__line hero-frame__line--top"></span>
+              <span class="hero-frame__line hero-frame__line--right"></span>
+              <span class="hero-frame__line hero-frame__line--bottom"></span>
+              <span class="hero-frame__line hero-frame__line--left"></span>
+              <span class="hero-frame__line hero-frame__line--inner-top"></span>
+              <span class="hero-frame__line hero-frame__line--inner-right"></span>
+              <span class="hero-frame__line hero-frame__line--inner-bottom"></span>
+              <span class="hero-frame__line hero-frame__line--inner-left"></span>
+              <div
+                class="hero-frame__ornament hero-frame__ornament--top"
+                data-svg-src="./public/assets/florals/hero-box-right-top.svg"
+              ></div>
+              <div
+                class="hero-frame__ornament hero-frame__ornament--bottom"
+                data-svg-src="./public/assets/florals/hero-box-left-bottom.svg"
+              ></div>
+            </div>
+            <p class="eyebrow">The Long Awaited Wedding Of</p>
+            <h1 id="hero-logo-title" class="hero-logo-title">
+              <img id="hero-logo" src="./public/assets/brand/IlhamNina.svg" alt="Ilham dan Nina" class="opening__crest" />
+            </h1>
+            <p class="opening__date">Minggu, 5 Juli 2026</p>
+            <div class="guest-line" aria-label="Nama tamu undangan">
+              <span class="guest-line__label">Kepada</span>
+              <span id="guest-name" class="guest-line__name">Bapak/Ibu/Saudara/i</span>
+            </div>
+            <p class="scroll-prompt">Let's scroll and roll</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="video-section" class="video-section" aria-label="Video Ilham dan Nina">
+        <div class="video-sticky">
+          <video
+            id="wedding-video"
+            width="16"
+            height="9"
+            playsinline
+            webkit-playsinline
+            preload="auto"
+            poster="./public/assets/brand/moodboard.png"
+          ></video>
+          <div id="video-fallback" class="video-fallback" aria-hidden="true">
+            <img src="./public/assets/brand/moodboard.png" alt="" />
+          </div>
+          <div class="video-controls" aria-label="Kontrol video">
+            <button id="mute-video" class="video-control icon-button icon-button--video-audio" type="button" aria-label="Mute video"></button>
+            <button id="skip-video" class="video-control video-control--skip" type="button">Lewati</button>
+          </div>
+          <button id="replay-video" class="video-replay icon-button icon-button--replay" type="button" aria-label="Putar ulang video"></button>
+          <p class="video-caption">A quiet beginning before the celebration.</p>
+          <div class="video-scroll-prompt" aria-label="Mulai scroll untuk melanjutkan" role="img">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="couple" class="couple-section" aria-label="Mempelai">
+        <article class="person-project person-project--groom" data-person="groom">
+          <div class="person-project__sticky">
+            <div class="person-project__copy">
+              <button class="person-project__trigger" type="button">Here comes the Groom</button>
+              <h2>MUHAMMAD ILHAM <span class="nowrap">MAULANA S. Kom.</span></h2>
+              <p>Putra dari Bapak Zulkarnain dan Ibu Nurhasanah Ibrahim S.Pd.</p>
+            </div>
+            <div id="groom-gallery" class="person-project__media" aria-label="Foto groom"></div>
+            <div class="person-fanfare" aria-hidden="true"></div>
+          </div>
+        </article>
+
+        <article class="person-project person-project--bride" data-person="bride">
+          <div class="person-project__sticky">
+            <div class="person-project__copy">
+              <button class="person-project__trigger" type="button">Here Comes The Bride</button>
+              <h2>NANDA KARINA <span class="nowrap">SATRIANI S.M.</span></h2>
+              <p>Putri. dari Bapak Agus Satriawan (Alm) dan Ibu Eliya Mariani</p>
+            </div>
+            <div id="bride-gallery" class="person-project__media" aria-label="Foto bride"></div>
+            <div class="person-fanfare" aria-hidden="true"></div>
+          </div>
+        </article>
+      </section>
+
+      <section id="dua" class="snap-section dua-section">
+        <div class="text-flow dua-layout">
+          <div class="dua-intro reveal-flow">
+            <p class="eyebrow">Doa & Restu</p>
+            <h2>Menuju Hari Bahagia</h2>
+            <p>
+              Tanpa mengurangi rasa hormat, kami memberikan kabar bahagia ini dan memohon restu
+              dari rekan sekalian untuk senantiasa mendoakan kelancaran acara pernikahan kami.
+            </p>
+            <div class="countdown" aria-label="Hitung mundur menuju pernikahan">
+              <div><strong id="days">00</strong><span>Hari</span></div>
+              <div><strong id="hours">00</strong><span>Jam</span></div>
+              <div><strong id="minutes">00</strong><span>Menit</span></div>
+              <div><strong id="seconds">00</strong><span>Detik</span></div>
+            </div>
+          </div>
+
+          <figure class="verse reveal-flow" style="--flow-side: 1">
+            <blockquote lang="ar" dir="rtl">
+              <span>وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا</span>
+              <span>لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةًۗ</span>
+              <span>اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ</span>
+            </blockquote>
+            <p>
+              Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu
+              pasangan-pasangan dari jenismu sendiri agar kamu merasa tenteram kepadanya.
+            </p>
+            <figcaption>- Qs. Ar-Rum : 21 -</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="story" class="story-section" aria-label="Galeri cerita Ilham dan Nina">
+        <div class="story-sticky">
+          <div class="story-heading">
+            <h2>Frames of Us</h2>
+          </div>
+          <div class="story-closing">
+            <p>we'll keep making more memories together</p>
+          </div>
+          <div id="gallery" class="gallery" aria-label="Galeri foto Ilham dan Nina"></div>
+        </div>
+      </section>
+
+      <section id="details" class="snap-section details-section">
+        <div class="text-flow details-layout">
+          <div class="details-copy reveal-flow">
+            <p class="eyebrow">Wedding Details</p>
+            <h2>Akad & Resepsi</h2>
+            <div class="details-columns">
+              <div>
+                <h3>Akad</h3>
+                <p>Minggu, 5 Juli 2026</p>
+                <strong>08:00 WITA</strong>
+              </div>
+              <div>
+                <h3>Resepsi</h3>
+                <p>Minggu, 5 Juli 2026</p>
+                <strong>11:00 WITA</strong>
+              </div>
+            </div>
+            <address>
+              Grand Imperial Ballroom<br />
+              Jl. Panji Tilar Negara, Kekalik Jaya,<br />
+              Kec. Sekarbela, Kota Mataram,<br />
+              Nusa Tenggara Barat 83115
+            </address>
+            <a class="map-link" href="https://maps.app.goo.gl/jVkm7MWFkTPHzWfg6" target="_blank" rel="noreferrer">Buka Maps</a>
+          </div>
+          <div class="citymap reveal-flow" style="--flow-side: 1">
+            <img class="citymap__img" src="./public/assets/brand/map-kekalik.png" alt="Peta lokasi sekitar Grand Imperial Ballroom" />
+            <div class="map-hotspot map-hotspot--venue" style="--x:46.7%;--y:62.7%;--w:20%;--h:12%;">
+              <span>Wedding Venue</span>
+              <em><strong>Grand Imperial Ballroom</strong>Akad 08:00 WITA dan resepsi 11:00 WITA. Titik utama acara kami.</em>
+            </div>
+            <div class="map-hotspot" style="--x:43.5%;--y:6.5%;--w:19%;--h:12%;">
+              <span>North Landmark</span>
+              <em><strong>Azko Kekalik Mataram</strong>Patokan dari arah utara di Jl. Panji Tilar Negara sebelum menuju ballroom.</em>
+            </div>
+            <div class="map-hotspot" style="--x:45.7%;--y:43.2%;--w:18%;--h:11%;">
+              <span>Mid Point</span>
+              <em><strong>Luna Bakery</strong>Patokan tengah yang mudah dikenali saat menyusuri Jl. Panji Tilar Negara.</em>
+            </div>
+            <div class="map-hotspot" style="--x:48.2%;--y:91.5%;--w:21%;--h:12%;">
+              <span>South Landmark</span>
+              <em><strong>Alfamart Batu Ringgit</strong>Patokan selatan dekat Jl. Sultan Kaharudin untuk tamu dari arah Batu Ringgit.</em>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gift" class="snap-section gift-section">
+        <div class="text-flow gift-panel reveal-flow flow-variety">
+          <p class="eyebrow">Wedding Gift</p>
+          <h2>Tanda Kasih</h2>
+          <p class="gift-intro">
+            Doa dan kehadiran Anda adalah hadiah terbaik. Namun apabila ingin mengirimkan
+            tanda kasih, detail berikut kami sediakan dengan penuh rasa syukur.
+          </p>
+          <div class="gift-grid">
+            <article class="gift-card">
+              <span>Untuk Ilham</span>
+              <h3>Muhammad Ilham Maulana</h3>
+              <p>BNI</p>
+              <strong>0559933906</strong>
+              <button class="copy-button" type="button" data-copy="0559933906">Salin Nomor</button>
+            </article>
+            <article class="gift-card">
+              <span>Untuk Nina</span>
+              <h3>Nanda Karina Satriani</h3>
+              <p>BNI</p>
+              <strong>1503753944</strong>
+              <button class="copy-button" type="button" data-copy="1503753944">Salin Nomor</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="thanks" class="snap-section thanks-section">
+        <div class="text-flow thanks-panel reveal-flow flow-variety">
+          <p class="eyebrow">Terima Kasih</p>
+          <h2>Dengan penuh hormat</h2>
+          <p class="thanks-message">
+            Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i
+            berkenan hadir dan memberikan do'a restu kepada kedua mempelai.
+          </p>
+          <span>Hormat kami yang mengundang</span>
+          <img class="thanks-signature" src="./public/assets/brand/IlhamNina.svg" alt="Ilham & Nina" />
+        </div>
+      </section>
+
+      <section id="comments" class="snap-section comments-section">
+        <div class="text-flow comments-layout">
+          <div class="comments-heading reveal-flow">
+            <p class="eyebrow">Wishes</p>
+            <h2><span>Kirim</span><span>Ucapan</span></h2>
+            <p>Doa baik Anda akan menjadi kenangan yang kami simpan dengan hangat.</p>
+          </div>
+          <form id="wish-form" class="wish-form reveal-flow" style="--flow-side: 1">
+            <label>
+              Nama
+              <input id="wish-name" type="text" maxlength="48" autocomplete="name" required />
+            </label>
+            <label>
+              Ucapan
+              <textarea id="wish-message" maxlength="220" rows="5" required></textarea>
+            </label>
+            <button class="copy-button copy-button--wide" type="submit">Kirim Ucapan</button>
+          </form>
+          <div id="wish-list" class="wish-list reveal-flow" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="gallery-modal" class="gallery-modal">
+      <button id="close-modal" class="modal-button modal-button--close" type="button" aria-label="Tutup galeri">×</button>
+      <button id="prev-photo" class="modal-button modal-button--prev" type="button" aria-label="Foto sebelumnya">‹</button>
+      <img id="modal-image" alt="Foto Ilham dan Nina" />
+      <button id="next-photo" class="modal-button modal-button--next" type="button" aria-label="Foto berikutnya">›</button>
+    </dialog>
+
+    <script src="./src/main.js?v=20260620-17" type="module"></script>
+  </body>
+</html>
