@@ -174,7 +174,7 @@ function smoothStep(edge0, edge1, value) {
 
 function setProgress(value) {
   const percent = Math.round(clamp(value, 0, 100));
-  loaderText.textContent = `Menyiapkan hari bahagia ${percent}%`;
+  loaderText.textContent = `preparing our special day ${percent}%`;
   loaderBar.style.width = `${percent}%`;
 }
 
